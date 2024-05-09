@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-#Add hbt and n
-puts AGRV[0].scan(/hbt*n/).join
+#A script to accept argument and pass to regex
+puts ARGV[0].scan(/hbt*n/).join
