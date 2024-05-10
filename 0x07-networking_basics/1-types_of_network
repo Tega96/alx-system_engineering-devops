@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#A bash script that displays all the valid ip4 and IPs on the machine
+#it is executed on 
+
+ifconfig -m | grep "inet addr" | cut -d " " -f12 | cut -d ":" -f2 
