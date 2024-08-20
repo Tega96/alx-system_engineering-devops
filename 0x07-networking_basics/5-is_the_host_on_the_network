@@ -9,5 +9,5 @@ usage()
 if [ "$#" -ne 1 ]; then
 	usage
 fi
-ip_address = "$1"
+ip_address="$1"
 ping -c 5 "$ip_address"
