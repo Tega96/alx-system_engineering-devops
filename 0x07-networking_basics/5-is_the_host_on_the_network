@@ -1,3 +1,13 @@
 #!/usr/bin/env bash
 #This bash script ping an IP address passed as an argument.
-ping -c 5 localhost
+usage()
+{
+	echo "Usage: $0 {IP_ADDRESS}"
+	exit 1
+}
+
+if [ "$#" -ne 1 ]; then
+	usage
+fi
+ip_address = "$1"
+ping -c 5 "$ip_address"
