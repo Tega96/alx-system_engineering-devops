@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#This script shows listening socket with PID
+netstat -tulnp 2>/dev/null | awk 'NR==1; NR>1 && /LISTEN/'
